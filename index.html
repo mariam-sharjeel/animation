@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+</head>
+<style>
+    .no1{
+        width: 500px;
+        height: 500px;
+        position: relative;
+        animation-name: tina;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        animation-timing-function: linear;
+    }
+    @keyframes tina {
+        to{left: 0px;}
+        from{left: 300px;}
+    }
+    .no2{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        animation-name: tina2;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+        animation-timing-function: linear;
+    }
+    @keyframes tina2 {
+        to{font-size: 0px;}
+        from{font-size: 40px;}
+    }
+    h1{
+        animation-name: tina2;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+        animation-timing-function: linear;
+        animation-iteration-count: 10;
+        animation-direction: alternate;
+    }
+    
+    @keyframes tina3 {
+        to{left: 0px;}
+        from{right: 200px;}  
+    }
+
+        
+    
+</style>
+<body>
+    <div class="no1">The caterpillar and Alice looked at each other for some time in silence:at last the caterpillar took the hookah out of his mouth,and addresed her in a linguid sleepy voice. </div>
+ <div class="no2">The caterpillar and Alice looked at each other for some time in silence:at last the caterpillar took the hookah out of his mouth,and addresed her in a linguid sleepy voice. </div>
+    <div class="no3">
+        <h1>WATCH ME MOVE</h1>
+        <p>This example shows how to make css animation to make h1 move across the page.in addition,we output some text each time an animation event fires,so you can see them in action.</p>
+        <ul>
+            <li>started.elapsed time is 0</li>
+            <li>New loop started at time 3</li>
+            <li>New loop started at time 6</li>
+            <li>Ended.elapsed time is 9</li>
+        </ul>
+    
+</body>
+</html>
